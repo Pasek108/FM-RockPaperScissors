@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://pasek108.github.io/rock-paper-scissors-master/](https://pasek108.github.io/rock-paper-scissors-master/)
+- Live Site URL: [ https://pasek108.github.io/rock-paper-scissors/]( https://pasek108.github.io/rock-paper-scissors/)
 - Live Site URL: [https://pas-artur.000webhostapp.com/rock-paper-scissors](https://pas-artur.000webhostapp.com/rock-paper-scissors)
 
 ## My process
