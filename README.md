@@ -47,5 +47,4 @@ Project is: complete
 
 
 ## Acknowledgements
-Give credit here.
 - This project was inspired by [this frontend mentor challange](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH)
