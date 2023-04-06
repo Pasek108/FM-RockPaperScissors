@@ -1,50 +1,45 @@
-# RockPaperScissors
-Rock-Paper-Scissors and Rock-Paper-Scissors-Lizard-Spock challange from frontend mentor.<br>
-See [live demo](https://pas-artur.000webhostapp.com/RockPaperScissors/  ).
+# Frontend Mentor - Rock, Paper, Scissors solution
 
-![Example screenshot](screenshot.png)
+This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH).
 
+## Table of contents
 
-## Table of Contents
-* [Technologies Used](#technologies-used)
-* [Features](#features)
-* [Setup](#setup)
-* [Usage](#usage)
-* [Project Status](#project-status)
-* [Acknowledgements](#acknowledgements)
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+  - [Built with](#built-with)
+- [Author](#author)
 
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-## Technologies Used
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the game depending on their device's screen size
+- Play Rock, Paper, Scissors against the computer
+- Maintain the state of the score after refreshing the browser _(optional)_
+- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
+
+### Screenshot
+
+![](./screenshot.jpg)
+
+### Links
+
+- Solution URL: [https://github.com/Pasek108/RockPaperScissors/](https://github.com/Pasek108/RockPaperScissors/)
+- Live Site URL: [https://pasek108.github.io/RockPaperScissors/](https://pasek108.github.io/RockPaperScissors/)
+
+### Built with
+
 - HTML5
 - LESS
-- JavaScript
+- JS (ECMAScript 2018)
 
+## Author
 
-## Features
-- Rock-Peper-Scissors game
-- Rock-Peper-Scissors-Lizard-Spock game
-- Option picking menu
-- Computer picking and verdict menu
-- Counting scores
-- Playing again
-
-
-## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
-
-
-## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
-
-
-## Project Status
-Project is: complete
-
-
-## Acknowledgements
-- This project was inspired by [this frontend mentor challange](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH)
+- Website - [Artur Pas](https://pas-artur.000webhostapp.com)
+- Frontend Mentor - [@Pasek108](https://www.frontendmentor.io/profile/Pasek108)

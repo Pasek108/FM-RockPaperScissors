@@ -1,0 +1,23 @@
+.background-image(@image, @position, @repeat, @size) {
+    background-image: @image;
+    background-position: @position;
+    background-repeat: @repeat;
+    background-size: @size;
+  }
+  
+  .flex(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+  }
+  
+  .position(@position: static, @top: auto, @left: auto, @right: auto, @bottom: auto, @z-index: auto) {
+    position: @position;
+    top: @top;
+    left: @left;
+    right: @right;
+    bottom: @bottom;
+    z-index: @z-index;
+  }
+  

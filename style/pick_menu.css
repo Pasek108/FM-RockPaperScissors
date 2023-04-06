@@ -1,0 +1,140 @@
+.change-game {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+.pick-menu {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  aspect-ratio: 1;
+  margin-top: 6rem;
+}
+.pick-menu .pick-option {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  -webkit-box-shadow: inset 0px calc(-50% / 28) 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px calc(-50% / 28) 0px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.pick-menu .pick-option::before {
+  content: "";
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  z-index: auto;
+  width: 75%;
+  height: 75%;
+  border-radius: 100%;
+  background-color: white;
+  -webkit-box-shadow: inset 0px 0.34rem 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 0.34rem 0px 0px rgba(0, 0, 0, 0.25);
+}
+.pick-menu .pick-option img {
+  position: absolute;
+  width: 32%;
+  margin-top: 3%;
+}
+.pick-menu .pick-option.rock {
+  background: radial-gradient(circle at center, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+.pick-menu .pick-option.paper {
+  background: radial-gradient(circle at center, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+.pick-menu .pick-option.scissors {
+  background: radial-gradient(circle at center, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+.pick-menu .pick-option.lizard {
+  background: radial-gradient(circle at center, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+}
+.pick-menu .pick-option.lizard img {
+  width: 40%;
+}
+.pick-menu .pick-option.spock {
+  background: radial-gradient(circle at center, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+}
+body.normal .pick-menu {
+  background-image: url(/images/bg-triangle.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body.normal .pick-menu .change-game {
+  margin-top: -30%;
+}
+body.normal .pick-menu .bonus {
+  display: none;
+}
+body.normal .pick-menu .rock {
+  bottom: -5%;
+}
+body.normal .pick-menu .paper {
+  top: -15%;
+  left: -18%;
+}
+body.normal .pick-menu .scissors {
+  top: -15%;
+  right: -18%;
+}
+body.bonus .pick-menu {
+  background-image: url(/images/bg-pentagon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body.bonus .pick-menu .change-game {
+  margin-top: 10%;
+}
+body.bonus .pick-menu .normal {
+  display: none;
+}
+body.bonus .pick-menu .pick-option {
+  width: 42%;
+}
+body.bonus .pick-menu .rock {
+  bottom: -19%;
+  right: -3%;
+}
+body.bonus .pick-menu .paper {
+  top: 19%;
+  right: -19%;
+}
+body.bonus .pick-menu .scissors {
+  top: -19%;
+}
+body.bonus .pick-menu .lizard {
+  bottom: -19%;
+  left: -3%;
+}
+body.bonus .pick-menu .spock {
+  top: 19%;
+  left: -19%;
+}

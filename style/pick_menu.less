@@ -1,0 +1,129 @@
+@import url(./helper_classes.less);
+
+.change-game {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.pick-menu {
+  position: relative;
+  .flex(column, center, center);
+  width: 20rem;
+  aspect-ratio: 1;
+  margin-top: 6rem;
+
+  .pick-option {
+    position: absolute;
+    .flex(column, center, center);
+    width: 50%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    box-shadow: inset 0px calc(-50% / 28) 0px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      .position(absolute);
+      width: 75%;
+      height: 75%;
+      border-radius: 100%;
+      background-color: white;
+      box-shadow: inset 0px 0.34rem 0px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    img {
+      position: absolute;
+      width: 32%;
+      margin-top: 3%;
+    }
+
+    &.rock {
+      background: radial-gradient(circle at center, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+    }
+
+    &.paper {
+      background: radial-gradient(circle at center, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+    }
+
+    &.scissors {
+      background: radial-gradient(circle at center, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+    }
+
+    &.lizard {
+      background: radial-gradient(circle at center, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+      img {
+        width: 40%;
+      }
+    }
+
+    &.spock {
+      background: radial-gradient(circle at center, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+    }
+  }
+}
+
+body.normal .pick-menu {
+  .background-image(url(/images/bg-triangle.svg), center, no-repeat, contain);
+
+  .change-game {
+    margin-top: -30%;
+  }
+
+  .bonus {
+    display: none;
+  }
+
+  .rock {
+    bottom: -5%;
+  }
+
+  .paper {
+    top: -15%;
+    left: -18%;
+  }
+
+  .scissors {
+    top: -15%;
+    right: -18%;
+  }
+}
+
+body.bonus .pick-menu {
+  .background-image(url(/images/bg-pentagon.svg), center, no-repeat, contain);
+
+  .change-game {
+    margin-top: 10%;
+  }
+
+  .normal {
+    display: none;
+  }
+
+  .pick-option {
+    width: 42%;
+  }
+
+  .rock {
+    bottom: -19%;
+    right: -3%;
+  }
+
+  .paper {
+    top: 19%;
+    right: -19%;
+  }
+
+  .scissors {
+    top: -19%;
+  }
+
+  .lizard {
+    bottom: -19%;
+    left: -3%;
+  }
+
+  .spock {
+    top: 19%;
+    left: -19%;
+  }
+}

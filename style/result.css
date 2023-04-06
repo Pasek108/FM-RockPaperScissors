@@ -1,0 +1,161 @@
+.result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+}
+.result .player-pick,
+.result .enemy-pick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+}
+.result .player-pick .text,
+.result .enemy-pick .text {
+  font-size: 1.25rem;
+  margin-bottom: 5rem;
+}
+.result .pick {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.15);
+}
+.result .pick .pick-option {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 130%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  -webkit-box-shadow: inset 0px calc(-50% / 28) 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px calc(-50% / 28) 0px 0px rgba(0, 0, 0, 0.25);
+}
+.result .pick .pick-option::before {
+  content: "";
+  position: absolute;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  z-index: auto;
+  width: 75%;
+  height: 75%;
+  border-radius: 100%;
+  background-color: white;
+  -webkit-box-shadow: inset 0px 0.34rem 0px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 0.34rem 0px 0px rgba(0, 0, 0, 0.25);
+}
+.result .pick .pick-option img {
+  position: absolute;
+  width: 32%;
+  margin-top: 3%;
+}
+.result .pick .pick-option.rock {
+  background: radial-gradient(circle at center, hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+}
+.result .pick .pick-option.paper {
+  background: radial-gradient(circle at center, hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+}
+.result .pick .pick-option.scissors {
+  background: radial-gradient(circle at center, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+.result .pick .pick-option.lizard {
+  background: radial-gradient(circle at center, hsl(261, 73%, 60%), hsl(261, 72%, 63%));
+}
+.result .pick .pick-option.lizard img {
+  width: 40%;
+}
+.result .pick .pick-option.spock {
+  background: radial-gradient(circle at center, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+}
+.result .pick.win {
+  -webkit-box-shadow: 0px 0px 0px 4.25rem rgba(255, 255, 255, 0.025), 0px 0px 0px 7rem rgba(255, 255, 255, 0.025), 0px 0px 0px 9.75rem rgba(255, 255, 255, 0.025);
+          box-shadow: 0px 0px 0px 4.25rem rgba(255, 255, 255, 0.025), 0px 0px 0px 7rem rgba(255, 255, 255, 0.025), 0px 0px 0px 9.75rem rgba(255, 255, 255, 0.025);
+}
+.result .verdict {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15rem;
+  margin-top: 5rem;
+  text-align: center;
+  overflow: hidden;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+}
+.result .verdict.hidden {
+  width: 0rem;
+  display: unset !important;
+}
+.result .verdict .text {
+  font-weight: 700;
+  font-size: 3rem;
+  width: 15rem;
+}
+.result .verdict .play-again {
+  width: 12rem;
+  padding: 0.5rem 3rem;
+  margin-top: 1rem;
+  background-color: white;
+  color: hsl(214, 47%, 23%);
+}
+.result .verdict .play-again:hover {
+  color: hsl(349, 71%, 52%);
+}

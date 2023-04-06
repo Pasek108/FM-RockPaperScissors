@@ -1,0 +1,43 @@
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40rem;
+  padding: 1rem 1.25rem 0.5rem 1.25rem;
+  border: 4px solid hsl(217, 16%, 45%);
+  border-radius: 0.75rem;
+}
+.page-header .logo img {
+  height: 100%;
+}
+.score {
+  height: 100%;
+  padding: 0.75rem 2.5rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.score span {
+  color: hsl(229, 64%, 46%);
+}
+.score .number {
+  font-size: 3rem;
+  color: hsl(229, 25%, 31%);
+}
+body.normal .logo .bonus {
+  display: none;
+}
+body.bonus .logo .normal {
+  display: none;
+}

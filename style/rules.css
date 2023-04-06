@@ -1,0 +1,88 @@
+.rules-button {
+  position: fixed;
+  top: auto;
+  left: auto;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: auto;
+}
+.rules-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: auto;
+  z-index: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.rules-wrapper .rules {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+.rules-wrapper .rules header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.rules-wrapper .rules .title {
+  color: hsl(229, 25%, 31%);
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+.rules-wrapper .rules .close {
+  background-image: url(/images/icon-close.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: initial;
+  cursor: pointer;
+}
+body.normal .rules .bonus {
+  display: none;
+}
+body.bonus .rules .normal {
+  display: none;
+}
