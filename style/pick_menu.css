@@ -82,7 +82,7 @@
   background: radial-gradient(circle at center, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
 }
 body.normal .pick-menu {
-  background-image: url(/images/bg-triangle.svg);
+  background-image: url(../images/bg-triangle.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -105,7 +105,7 @@ body.normal .pick-menu .scissors {
   right: -18%;
 }
 body.bonus .pick-menu {
-  background-image: url(/images/bg-pentagon.svg);
+  background-image: url(../images/bg-pentagon.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
