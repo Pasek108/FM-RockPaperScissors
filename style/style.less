@@ -48,7 +48,7 @@ button {
 main {
   .flex(column, flex-start, center);
   width: 60%;
-  min-height: 80vh;
+  margin-bottom: 5rem;
 }
 
 /* ------------------- footer ------------------- */
@@ -64,10 +64,11 @@ main {
 }
 
 @media only screen and (max-width: 900px) {
+  /* ----- results ----- */
   .player-pick,
   .enemy-pick {
     width: 20rem !important;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
   }
 
   .verdict {
@@ -94,24 +95,12 @@ main {
     padding: 0.75rem 2rem;
   }
 
-  /* ----- pick menu ----- */
-  .pick-menu {
-    width: 120%;
-
-    .change-game {
-      .position(fixed, @bottom: 2rem, @left: 2rem, @z-index: 1);
-      padding: 0.5rem 1.5rem;
-      margin-top: 0 !important;
-      font-size: 1rem;
-    }
-  }
-
   /* ----- results ----- */
   .player-pick,
   .enemy-pick {
     flex-direction: column-reverse !important;
     width: 12rem !important;
-    margin: 2rem 0 15rem 0;
+    margin: 2rem 0 5rem 0;
 
     .text {
       margin: 3rem 0 0 0;
@@ -143,6 +132,20 @@ main {
       position: absolute;
       bottom: 10%;
       left: calc(50% - 0.625rem);
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* ----- pick menu ----- */
+  .pick-menu {
+    width: 120%;
+
+    .change-game {
+      .position(fixed, @bottom: 2rem, @left: 2rem, @z-index: 1);
+      padding: 0.5rem 1.5rem;
+      margin-top: 0 !important;
+      font-size: 1rem;
     }
   }
 }
