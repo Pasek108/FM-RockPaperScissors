@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Pasek108/RockPaperScissors/](https://github.com/Pasek108/RockPaperScissors/)
-- Live Site URL: [https://pasek108.github.io/RockPaperScissors/](https://pasek108.github.io/RockPaperScissors/)
+- Solution URL: [https://github.com/Pasek108/FM-RockPaperScissors/](https://github.com/Pasek108/FM-RockPaperScissors/)
+- Live Site URL: [https://pasek108.github.io/FM-RockPaperScissors/](https://pasek108.github.io/FM-RockPaperScissors/)
 
 ### Built with
 
