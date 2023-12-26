@@ -1,6 +1,10 @@
 .change-game {
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
+  position: fixed;
+  top: auto;
+  left: 2rem;
+  right: auto;
+  bottom: 2rem;
+  z-index: auto;
 }
 .pick-menu {
   position: relative;
@@ -87,9 +91,6 @@ body.normal .pick-menu {
   background-repeat: no-repeat;
   background-size: contain;
 }
-body.normal .pick-menu .change-game {
-  margin-top: -30%;
-}
 body.normal .pick-menu .bonus {
   display: none;
 }
@@ -109,9 +110,6 @@ body.bonus .pick-menu {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-body.bonus .pick-menu .change-game {
-  margin-top: 10%;
 }
 body.bonus .pick-menu .normal {
   display: none;

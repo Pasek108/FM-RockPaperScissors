@@ -1,8 +1,7 @@
 @import url(./helper_classes.less);
 
 .change-game {
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
+  .position(fixed, @left: 2rem, @bottom: 2rem);
 }
 
 .pick-menu {
@@ -65,10 +64,6 @@
 body.normal .pick-menu {
   .background-image(url(../images/bg-triangle.svg), center, no-repeat, contain);
 
-  .change-game {
-    margin-top: -30%;
-  }
-
   .bonus {
     display: none;
   }
@@ -90,10 +85,6 @@ body.normal .pick-menu {
 
 body.bonus .pick-menu {
   .background-image(url(../images/bg-pentagon.svg), center, no-repeat, contain);
-
-  .change-game {
-    margin-top: 10%;
-  }
 
   .normal {
     display: none;
