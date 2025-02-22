@@ -1,11 +1,3 @@
-.change-game {
-  position: fixed;
-  top: auto;
-  left: 2rem;
-  right: auto;
-  bottom: 2rem;
-  z-index: auto;
-}
 .pick-menu {
   position: relative;
   display: -webkit-box;

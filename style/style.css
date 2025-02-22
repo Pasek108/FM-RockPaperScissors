@@ -12,6 +12,7 @@
   text-transform: uppercase;
 }
 body {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,14 +79,41 @@ main {
           align-items: center;
   width: 60%;
   margin-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 /* ------------------- footer ------------------- */
-.attribution {
+footer {
+  position: absolute;
+  top: auto;
+  left: 2rem;
+  right: auto;
+  bottom: 2rem;
+  z-index: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 1rem;
+  width: calc(100% - 4rem);
+}
+footer button {
+  width: 12rem;
+}
+footer .attribution {
   padding: 0.25rem;
   font-size: 14px;
   text-align: center;
 }
-.attribution a {
+footer .attribution a {
   color: hsl(215, 93%, 53%);
   font-size: 14px;
 }
@@ -99,6 +127,11 @@ main {
   .verdict {
     position: absolute;
     bottom: -5rem;
+  }
+  .attribution {
+    position: absolute;
+    top: 3rem;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -162,19 +195,19 @@ main {
   }
 }
 @media only screen and (max-width: 500px) {
+  body {
+    padding: 1rem;
+  }
+  footer {
+    left: 1rem;
+    width: calc(100% - 2rem);
+    margin-bottom: 1rem;
+  }
+  footer button {
+    padding: 0.5rem 1rem;
+  }
   /* ----- pick menu ----- */
   .pick-menu {
-    width: 120%;
-  }
-  .pick-menu .change-game {
-    position: fixed;
-    top: auto;
-    left: 2rem;
-    right: auto;
-    bottom: 2rem;
-    z-index: 1;
-    padding: 0.5rem 1.5rem;
-    margin-top: 0 !important;
-    font-size: 1rem;
+    width: 110%;
   }
 }

@@ -1,11 +1,3 @@
-.rules-button {
-  position: fixed;
-  top: auto;
-  left: auto;
-  right: 2rem;
-  bottom: 2rem;
-  z-index: auto;
-}
 .rules-wrapper {
   position: fixed;
   top: 0;
