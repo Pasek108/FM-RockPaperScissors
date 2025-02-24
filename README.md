@@ -96,27 +96,41 @@ I do not own the rights to the content of the challenges. All challenge data was
 # Details :scroll:
 
 ## User interface
-### Rock paper scissors  
-![rock paper scissors](/_for_readme/UI/rock-paper-scissors.png)  
-The header contains the logo on the left and buttons on the right.
+
+### Header  
+![header](/_for_readme/UI/header.png)  
+The header displays the current game mode name and the player's points for this mode.  
 
 ---
 
-### Rock paper scissors lizard spock
-![rock paper scissors lizard spock](/_for_readme/UI/rock-paper-scissors-lizard-spock.png)  
-The header contains the logo on the left and buttons on the right.
+### Footer  
+![footer](/_for_readme/UI/footer.png)  
+The footer contains two buttons:  
+- **Change Game** – Switches the game mode.  
+- **Rules** – Displays the rules for the selected game mode.  
+
+It also includes an attribution section with links to the challenge and solution authors.  
 
 ---
 
-### Result
-![winner](/_for_readme/UI/winner.png)  
-The header contains the logo on the left and buttons on the right.
+### Pick Menu  
+![rock paper scissors pick](/_for_readme/UI/rock-paper-scissors-pick.png)  
+![rock paper scissors lizard spock pick](/_for_readme/UI/rock-paper-scissors-lizard-spock-pick.png)  
+The pick menu contains buttons representing the possible choices for the selected game mode. The user must click on one of the options to play.  
 
 ---
 
-### Rules
-![rules](/_for_readme/UI/rules.png)  
-The header contains the logo on the left and buttons on the right.
+### Result Menu  
+![rock paper scissors result](/_for_readme/UI/rock-paper-scissors-result.png)  
+![rock paper scissors lizard spock result](/_for_readme/UI/rock-paper-scissors-lizard-spock-result.png)  
+The result menu displays the user's pick and a randomly generated pick by the computer. It highlights the winner of the round and adjusts the points according to the game rules.  
+
+---
+
+### Rules  
+![rock paper scissors rules](/_for_readme/UI/rock-paper-scissors-rules.png)  
+![rock paper scissors lizard spock rules](/_for_readme/UI/rock-paper-scissors-lizard-spock-rules.png)  
+The rules view shows an image illustrating which picks defeat others.  
 
 ## Performance
 
